@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shop App</string>
+    <string name="text_of_toast_custom_layout">something</string>
+    <string name="home_nav_title">Home</string>
+    <string name="account_nav_bottom">Account</string>
+    <string name="title_first_box_scroll_horizontal">Black Frieday</string>
+    <string name="undertitle_first_box_scroll_horizontal">Off 30%</string>
+    <string name="bottom_text_scrollview_firstbox">"30% "</string>
+    <string name="price_of_under_box">Gold Button Vest</string>
+</resources>

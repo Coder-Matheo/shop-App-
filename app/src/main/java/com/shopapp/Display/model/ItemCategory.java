@@ -1,5 +1,9 @@
 package com.shopapp.Display.model;
 
+import android.os.Parcelable;
+
+import java.util.ArrayList;
+
 public class ItemCategory {
     private int image;
     private String name_song;

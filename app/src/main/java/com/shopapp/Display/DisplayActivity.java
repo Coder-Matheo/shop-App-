@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
+import com.shopapp.Display.adapter.CategoryItemRecyclerAdapter;
 import com.shopapp.Display.adapter.ViewPagerAdapter;
 import com.shopapp.R;
 import com.shopapp.RestElement.Rest_element;
@@ -36,18 +39,14 @@ public class DisplayActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager);
 
 
-
-
-
-
         tabLayoutViewpager();
 
-        scollview_tobox(R.drawable.fran1, R.drawable.ic_home, "Here Click", "Only for 20 days");
-        scollview_tobox(R.drawable.fran2, R.drawable.ic_home, "Here Click", "Only for 10 days");
+        scollview_tobox(R.drawable.fran1, "Here Click", "Only for 20 days");
+        scollview_tobox(R.drawable.fran2, "Here Click", "Only for 10 days");
 
     }
 
-    public void scollview_tobox(int image, int iconToast, String titleToast, String textToast){
+    public void scollview_tobox(int image, String titleToast, String textToast){
         View scrollview = getLayoutInflater().inflate(R.layout.row_item_top_scrollview_horizontal, null, false);
 
         ImageView imageView = scrollview.findViewById(R.id.image_row_box);
@@ -58,7 +57,7 @@ public class DisplayActivity extends AppCompatActivity {
         linearlayout_topbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rest_element.toast_makeAlert(titleToast, textToast, iconToast);
+                rest_element.toast_makeAlert(titleToast, textToast);
             }
         });
 
@@ -84,10 +83,9 @@ public class DisplayActivity extends AppCompatActivity {
         tabLayout.getTabAt(3).setIcon(R.drawable.ic_man);
         tabLayout.getTabAt(4).setIcon(R.drawable.ic_man);
         tabLayout.getTabAt(5).setIcon(R.drawable.ic_man);
+
+
     }
-
-
-
 
 
 

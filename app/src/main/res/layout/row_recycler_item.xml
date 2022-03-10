@@ -13,17 +13,18 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             app:cardCornerRadius="15dp">
             <LinearLayout
+                android:id="@+id/linearLayout_horizontal_item"
                 android:layout_width="150dp"
-                android:layout_height="200dp"
+                android:layout_height="150dp"
                 android:background="@color/purple_700">
                 <ImageView
                     android:id="@+id/image_row_item"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/film3"/>
+                    android:src="@drawable/fran1"/>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:text="$669"
             android:textColor="@color/black"
-            android:textSize="28dp"
+            android:textSize="22dp"
             android:textStyle="bold"
             android:textAlignment="textStart"/>
 

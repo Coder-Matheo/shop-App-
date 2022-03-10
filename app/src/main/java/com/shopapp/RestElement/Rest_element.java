@@ -17,7 +17,9 @@ public class Rest_element {
         this.context = context;
     }
 
-    public void toast_makeAlert( String titleTextOfToast,String textOfToast, int drawableIcon){
+
+
+    public void toast_makeAlert( String titleTextOfToast,String textOfToast){
         Toast toast = new Toast(context.getApplicationContext());
         View view = LayoutInflater.from(context).inflate(R.layout.custom_layout_toast, null);
         TextView titleTextViewOfToast = view.findViewById(R.id.titleTextOfToastId);
@@ -27,7 +29,7 @@ public class Rest_element {
         textViewOfToast.setText(textOfToast);
 
         ImageView iconOfToast = view.findViewById(R.id.imageOfToastCustomId);
-        iconOfToast.setImageResource(drawableIcon);
+        iconOfToast.setImageResource(R.drawable.ic_home);
 
         toast.setView(view);
         toast.setDuration(Toast.LENGTH_LONG);

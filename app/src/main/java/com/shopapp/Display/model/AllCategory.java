@@ -8,12 +8,16 @@ public class AllCategory {
     private int age;
     List<ItemCategory> categoryList;
 
+
     public AllCategory(String name, String lastname, int age, List<ItemCategory> categoryList) {
         this.name = name;
         this.lastname = lastname;
         this.age = age;
         this.categoryList=categoryList;
+
     }
+
+
 
     public List<ItemCategory> getCategoryList() {
         return categoryList;
